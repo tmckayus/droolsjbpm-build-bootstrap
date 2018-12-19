@@ -1302,7 +1302,7 @@
             <dependency>
               <groupId>org.kie</groupId>
               <artifactId>kie-build-tools</artifactId>
-              <version>7.16.0-SNAPSHOT</version>
+              <version>${project.version}</version>
             </dependency>
           </dependencies>
           <configuration>
