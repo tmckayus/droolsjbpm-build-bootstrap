@@ -46,9 +46,9 @@
   <properties>
     <!-- Internal dependencies -->
     <version.org.kie>7.16.0-SNAPSHOT</version.org.kie>
-    <version.org.drools>${version.org.kie}</version.org.drools>
-    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
-    <version.org.jbpm>${version.org.kie}</version.org.jbpm>
+    <version.org.drools>7.16.0-SNAPSHOT</version.org.drools>
+    <version.org.optaplanner>7.16.0-SNAPSHOT</version.org.optaplanner>
+    <version.org.jbpm>7.16.0-SNAPSHOT</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
     <version.org.uberfire>2.13.0-SNAPSHOT</version.org.uberfire>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
@@ -224,7 +224,7 @@
     <version.net.openhft.chronicle-bytes>1.16.16</version.net.openhft.chronicle-bytes>
     <version.net.openhft.chronicle-wire>1.16.15</version.net.openhft.chronicle-wire>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
-    <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
+    <version.org.kie.workbench.app>7.16.0-SNAPSHOT</version.org.kie.workbench.app>
 
     <version.org.wildfly.swarm>2018.3.3</version.org.wildfly.swarm>
     <version.net.byte-buddy>1.8.17</version.net.byte-buddy>
@@ -1302,7 +1302,7 @@
             <dependency>
               <groupId>org.kie</groupId>
               <artifactId>kie-build-tools</artifactId>
-              <version>${version.org.kie}</version>
+              <version>${project.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -1316,7 +1316,7 @@
         <plugin>
           <groupId>org.kie</groupId>
           <artifactId>kie-maven-plugin</artifactId>
-          <version>${version.org.kie}</version>
+          <version>7.16.0-SNAPSHOT</version>
         </plugin>
         <plugin>
           <groupId>org.pitest</groupId>
@@ -1750,27 +1750,27 @@
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-maven-support</artifactId>
-        <version>${version.org.kie}</version>
+        <version>7.16.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-maven-integration</artifactId>
-        <version>${version.org.kie}</version>
+        <version>7.16.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-commons</artifactId>
-        <version>${version.org.kie}</version>
+        <version>7.16.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-project-datamodel-api</artifactId>
-        <version>${version.org.kie}</version>
+        <version>7.16.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-project-datamodel-commons</artifactId>
-        <version>${version.org.kie}</version>
+        <version>7.16.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
