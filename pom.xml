@@ -198,8 +198,6 @@
     <checkstyle.header.template>.*</checkstyle.header.template>
     <checkstyle.header.extensions>java</checkstyle.header.extensions>
     <enforcer.failOnDuplicatedClasses>true</enforcer.failOnDuplicatedClasses>
-    <!-- Set to "true" on every project that has no violations. -->
-    <findbugs.failOnViolation>false</findbugs.failOnViolation>
     <!-- org.eclipse.tycho plugin version -->
     <version.org.eclipse.tycho>1.0.0</version.org.eclipse.tycho>
     <version.org.jboss.tools.tycho-plugins>1.0.0</version.org.jboss.tools.tycho-plugins>
@@ -1294,24 +1292,6 @@
           <groupId>org.wildfly.swarm</groupId>
           <artifactId>wildfly-swarm-plugin</artifactId>
           <version>${version.org.wildfly.swarm}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>findbugs-maven-plugin</artifactId>
-          <dependencies>
-            <dependency>
-              <groupId>org.kie</groupId>
-              <artifactId>kie-build-tools</artifactId>
-              <version>${project.version}</version>
-            </dependency>
-          </dependencies>
-          <configuration>
-            <maxRank>6</maxRank>
-            <effort>Max</effort>
-            <xmlOutput>true</xmlOutput>
-            <failOnError>${findbugs.failOnViolation}</failOnError>
-            <excludeFilterFile>findbugs-excludes.xml</excludeFilterFile>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.kie</groupId>
