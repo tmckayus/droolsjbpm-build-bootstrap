@@ -1730,14 +1730,6 @@
 
   <modules>
     <module>kie-build-tools</module>
-    <module>kie-user-bom-parent</module>
-    <module>kie-bom</module>
-    <module>drools-bom</module>
-    <module>optaplanner-bom</module>
-    <module>jbpm-bom</module>
-    <module>kie-uberfire-extensions-bom</module>
-    <module>kie-platform-bom</module>
-    <module>kie-dmn-bom</module>
   </modules>
 
   <dependencyManagement>
